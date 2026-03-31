@@ -91,6 +91,36 @@ git push
 
 - GitHub: <https://github.com/cnoo-c/talk>
 
+## 给新会话助手的接手说明
+
+如果这是一个全新会话，优先先读本文件，再继续动代码。
+
+当前项目状态：
+
+- 这是一个 macOS 14+ SwiftPM 菜单栏语音输入应用
+- 安装路径通常是 `~/Applications/FnVoiceInput.app`
+- 当前默认热键是 `Option`，不是 `Fn`
+- 当前主识别链路使用 Apple `Speech` framework
+- 当前菜单和设置界面文案是中文
+- GitHub 仓库地址是 <https://github.com/cnoo-c/talk>
+
+建议接手顺序：
+
+1. 进入仓库目录
+2. 阅读 `README.md`
+3. 运行 `git status`
+4. 如需本地验证，运行 `make install`
+5. 从 `~/Applications/FnVoiceInput.app` 启动实际测试
+
+项目里最关键的文件：
+
+- `Sources/FnVoiceInput/AppDelegate.swift`
+- `Sources/FnVoiceInput/SpeechRecognizerService.swift`
+- `Sources/FnVoiceInput/OverlayPanelController.swift`
+- `Sources/FnVoiceInput/StatusBarController.swift`
+- `Sources/FnVoiceInput/SettingsWindowController.swift`
+- `Sources/FnVoiceInput/PasteInjector.swift`
+
 ## 当前说明
 
 - 当前默认热键是 `Option`，不是 `Fn`
